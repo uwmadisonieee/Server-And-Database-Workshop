@@ -2,6 +2,14 @@
 
 This is a step by step guide how to get up and running with Servers and Database. We will be using Node.js and MongoDB to run our server and store data.
 
+## The Workshop
+
+There is a ton of information to break down so this workshop is broken down to 3 parts
+
+1. [Node.js workshop](./NodeJS_Workshop)
+2. [Express.js workshop](./ExpressJS_Workshop) (Under Contruction)
+3. [MongoDB workshop](./MongoDB_Workshop) (Under Contruction)
+
 ## Things to Install
 
 As with anything, you will need certain software downloaded to work with, luckily its not as bad as it looks at first
@@ -11,7 +19,9 @@ As with anything, you will need certain software downloaded to work with, luckil
 - [MongoDB](#mongodb)
 - [MongoChef](#mongochef)
 
-### NodeJS
+### NodeJS 
+
+> Need for all Workshops
 
 We need to make sure you have at least version `6.11.0` which supports ES6. This workshop will use version `8.7.0` but anything above `6.11.0` for our purposes will be just fine!
 
@@ -31,9 +41,13 @@ We need to make sure you have at least version `6.11.0` which supports ES6. This
 
 ### Postman
 
+> Need just for Express.JS and MongoDB Workshop
+
 [Postman](https://www.getpostman.com/) is a tool used to call HTTP Request and see the response. This will be used to test that our server is correctly handling all various HTTP Request.
 
 ### MongoDB
+
+> Need just for MongoDB Workshop
 
 When you download MongoDB you actually get a few different executables, we are worrying about just two: `mongod` and `mongo`
 
@@ -60,12 +74,6 @@ When you download MongoDB you actually get a few different executables, we are w
 
 ### MongoChef
 
+> Need just for MongoDB Workshop
+
 Command line shells are good to learn, but for sake of simplicity we will just use a GUI to interact with our database. [MongoChef](https://studio3t.com/download/) is by far the nicest MongoDB GUI I know about and easy to [download and install.](https://studio3t.com/download/)
-
-## The Workshop
-
-There is a ton of information to break down so this workshop is broken down to 3 parts
-
-1. [Node.js workshop](./NodeJS_Workshop)
-2. [Express.js workshop](./ExpressJS_Workshop) (Under Contruction)
-3. [MongoDB workshop](./MongoDB_Workshop) (Under Contruction)

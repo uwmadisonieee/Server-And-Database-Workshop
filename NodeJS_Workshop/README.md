@@ -3,6 +3,8 @@
 
 This workshop is to **quick** teach you about NodeJS. This is by no means a full tutorial, but the goal is teach you the main concepts you may be new to learning how to run a backend.
 
+> Find something wrong or confusing? Please make [an issue](https://github.com/uwmadisonieee/Server-And-Database-Workshop/issues) as I want to improve these guide as much as possible!
+
 ## What is NodeJS
 
 Every language needs a way to compile to code and run it. For javascript each browser has its own "engine" which is really for our purpose the "compiler". Chrome's engine, the V8 Engine, is what runs NodeJS... so really this means you can now just run your javascript code in your terminal and not a browser. NodeJS offers a set of built in modules/libraries for servers use cases and this bundled with a javascript engine is all NodeJS really is. NodeJS is also [Event-Driven Programming](https://www.tutorialspoint.com/nodejs/nodejs_event_loop.htm) language and is designed to wait until you request an action out of it.
