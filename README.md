@@ -6,9 +6,14 @@ This is a step by step guide how to get up and running with Servers and Database
 
 As with anything, you will need certain software downloaded to work with, luckily its not as bad as it looks at first
 
+- [NodeJS](#nodejs)
+- [Postman](#postman)
+- [MongoDB](#mongodb)
+- [MongoChef](#mongochef)
+
 ### NodeJS
 
-We need to make sure you have at least version `6.11.0` which supports ES6
+We need to make sure you have at least version `6.11.0` which supports ES6. This workshop will use version `8.7.0` but anything above `6.11.0` for our purposes will be just fine!
 
 #### Windows/Mac
 	
@@ -16,7 +21,7 @@ We need to make sure you have at least version `6.11.0` which supports ES6
 2. Install
 3. Open terminal (Command prompt for Windows) and type `node -v` and you should see a version
 
-- If on Windows, you will also need to make sure `C:\Program Files\nodejs\` is included in your Enviroment path
+- If on Windows, you will also need to make sure `C:\Program Files\nodejs\` is included in your [Enviroment path](https://stackoverflow.com/questions/27864040/fixing-npm-path-in-windows-8/32159233)
 	- Note: The file path may vary for users
 - If on Windows, you need to close and reopen command prompt to see effect
 
@@ -49,8 +54,8 @@ When you download MongoDB you actually get a few different executables, we are w
 - Run:
 	- `show dbs`
 	- `use Test`
-	- `db.TestCollection.insert({"hello":"world"})
-	- `db.TestCollection.find()
+	- `db.TestCollection.insert({"hello":"world"})`
+	- `db.TestCollection.find()`
 - If this worked then you have a working MongoDB and to start it you just need to have `mongod` running in background
 
 ### MongoChef
