@@ -72,8 +72,8 @@ When you download MongoDB you actually get a few different executables, we are w
 	- `db.TestCollection.find()`
 - If this worked then you have a working MongoDB and to start it you just need to have `mongod` running in background
 
-### MongoChef
+### Robomongo (Robo 3T)
 
 > Need just for MongoDB Workshop
 
-Command line shells are good to learn, but for sake of simplicity we will just use a GUI to interact with our database. [MongoChef](https://studio3t.com/download/) is by far the nicest MongoDB GUI I know about and easy to [download and install.](https://studio3t.com/download/)
+Command line shells are good to learn, but for sake of simplicity we will just use a GUI to interact with our database. [Robomongo](https://robomongo.org/) is by far the nicest MongoDB GUI I know about and easy to [download and install.](https://robomongo.org/)
