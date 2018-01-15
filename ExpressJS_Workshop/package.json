@@ -1,0 +1,16 @@
+{
+  "name": "expressjs_workshop",
+  "version": "1.0.0",
+  "description": "Learn to use ExpressJS with Node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uwmadisonieee/Server-And-Database-Workshop/tree/master/ExpressJS_Workshop"
+  },
+  "author": "Spencer Fricke",
+  "license": "ISC"
+}
