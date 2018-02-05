@@ -12,5 +12,10 @@
     "url": "https://github.com/uwmadisonieee/Server-And-Database-Workshop/tree/master/ExpressJS_Workshop"
   },
   "author": "Spencer Fricke",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  }
 }

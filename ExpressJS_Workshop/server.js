@@ -1,10 +1,12 @@
 const express = require('express'); //used as routing framework
 const app = express(); //creates an instance of express
-
-const bodyParser = require('body-parser'); //allows the use of req.body in POST request
 const server = require('http').createServer(app); //creates an HTTP server instance
 
-const port = 3000;
+const path = require('path'); //Node.js module used for getting path of file
+const logger = require('morgan'); //used to log in console window all request
+app.use(logger('dev')); //debugs logs in terminal
+
+const PORT = 3000;
 
 //-------------------------Express JS configs-----------------------------//
 // view engine setup
@@ -12,12 +14,7 @@ const port = 3000;
 app.set('views', './views'); //says where in root directory the find files (./views)
 app.set('view engine', 'ejs'); //says which engine being used (ejs)
 
-app.use(logger('dev')); //debugs logs in terminal
-// IMPORTANT: If you don't use bodyParser then you will NOT be able to call req.body.value
-// without parsing JSON yourself
-app.use(bodyParser.json()); //parses json and sets to body
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public'))) //sets all static file calls to 
+app.use(express.static(path.join(__dirname, 'public'))); //sets all static file calls to 
 
 //-------------------------Routing Calls-----------------------------//
 
@@ -50,7 +47,7 @@ app.get('/color/:color', function(req, res, next) {
 
 // Change Port here
 // process.env.PORT used with services like Azure or AWS who give port
-var port = normalizePort(process.env.PORT || '9000');
+var port = normalizePort(process.env.PORT || PORT);
 app.set('port', port);
 
 
