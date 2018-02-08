@@ -18,24 +18,24 @@ app.use(express.static(path.join(__dirname, 'public'))); //sets all static file 
 
 //-------------------------Routing Calls-----------------------------//
 
-app.get('/date', function(req, res, next) {
+app.get('/date', function(req, res) {
 
-    var date = (new Date()).toString();
+  var date = (new Date()).toString();
 
 	return res.status(200).send(date);
 });
 
 // Loads page and set background color by color passed in URL
 // Example: http://mySite:9000/color/red creates a red page
-app.get('/color/:color', function(req, res, next) {
+app.get('/color/:color', function(req, res) {
     
-    var backgroundColor = req.params.color || "white"; //defaults if no param is passed
-    
-    // pass in a json file to render page with
-    res.render('color', {
-        message: "Server is up and running",
-        color: backgroundColor        
-    });   
+  var backgroundColor = req.params.color || "white"; //defaults if no param is passed
+  
+  // pass in a json file to render page with
+  res.render('color', {
+    message: "Server is up and running",
+    backColor: backgroundColor        
+  });   
 });
 
 
@@ -54,7 +54,6 @@ app.set('port', port);
 /**
  * Listen on provided port, on all network interfaces.
  */
-
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
@@ -62,7 +61,6 @@ server.on('listening', onListening);
 /**
  * Normalize a port into a number, string, or false.
  */
-
 function normalizePort(val) {
   var port = parseInt(val, 10);
 
@@ -82,7 +80,6 @@ function normalizePort(val) {
 /**
  * Event listener for HTTP server "error" event.
  */
-
 function onError(error) {
   if (error.syscall !== 'listen') {
     throw error;
@@ -110,7 +107,6 @@ function onError(error) {
 /**
  * Event listener for HTTP server "listening" event.
  */
-
 function onListening() {
   var addr = server.address();
   var bind = typeof addr === 'string'
