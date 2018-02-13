@@ -1,0 +1,18 @@
+{
+  "name": "Express_JS_Template",
+  "version": "1.0.0",
+  "description": "A light template to get a Express JS server up and going",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Spencer Fricke",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.4",
+    "morgan": "^1.6.1"
+  }
+}
