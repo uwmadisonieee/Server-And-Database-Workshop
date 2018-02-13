@@ -6,11 +6,11 @@ This is a step by step guide how to get up and running with Servers and Database
 
 There is a ton of information to break down so this workshop is broken down to 3 parts
 
-### Intro to servers and backend Workshop
+### Intro to servers and backend Workshop ([presentation slides](https://drive.google.com/open?id=1aTsOQSviAGNWAKfde-Ugo8UmYAVbIv_igaXJXxLKffE))
 - [Node.js workshop](./NodeJS_Workshop)
 - [Express.js workshop](./ExpressJS_Workshop)
 
-### Databases 101
+### Databases 101 ([presentation slides](https://drive.google.com/open?id=1akW4UNi-EBlzVO2IMIokjkJsWdH-zfft7ORMoFI_zGE))
 - [MongoDB workshop](./MongoDB_Workshop)
 
 ## Things to Install
