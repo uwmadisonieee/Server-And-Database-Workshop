@@ -18,9 +18,9 @@ There is a ton of information to break down so this workshop is broken down to 3
 As with anything, you will need certain software downloaded to work with, luckily its not as bad as it looks at first
 
 - [NodeJS](#nodejs)
-- [Postman](#postman)
-- [MongoDB](#mongodb)
-- [MongoChef](#mongochef)
+- [Postman](#postman) (only needed for MongoDB Workshop)
+- [MongoDB](#mongodb) (only needed for MongoDB Workshop)
+- [Studio 3T](#studio-3t) (only needed for MongoDB Workshop)
 
 ### NodeJS 
 
@@ -52,19 +52,20 @@ We need to make sure you have at least version `6.11.0` which supports ES6. This
 
 > Need just for MongoDB Workshop
 
+**BIG NOTE - PLEASE READ** MongoDB defaults its saved file path to `/data/db` (or `C:\data\db` for Windows). **Create** this folder unless you plan to change the path in the MongoDB configuration. If you don't do this MongoDB will complain and not start up!
+
 When you download MongoDB you actually get a few different executables, we are worrying about just two: `mongod` and `mongo`
 
 1. [Download and install MongoDB](https://www.mongodb.com/download-center#community)
+	- Look for "community edition", **not** "enterprise" or "atlas"
+	- Mac can use `brew install mongodb`
 	- For headless Linux you can run `sudo apt-get install mongodb-server` 
 2. Run `mongod --version` to confirm it install correctly
-
 - If on Windows, make sure add path to MongoDB to system enviroment variables and restart the command prompt
 		- Location will be similar to `C:\Program Files\MongoDB\Server\3.0\bin\`
 
 #### Test MongoDB is running
 	
-**NOTE** MongoDB defaults its saved file path to `/data/db` (or `C:\data\db` for Windows). **Create** this folder unless you plan to change the path in the MongoDB configuration. If you don't do this MongoDB will complain and not start up!
-
 - Open a terminal or command prompt and type `mongod`
 	- You might have to use `sudo` if Mac/Linux
 - In a second terminal run `mongo` and it should open a Mongo Shell
@@ -75,8 +76,8 @@ When you download MongoDB you actually get a few different executables, we are w
 	- `db.TestCollection.find()`
 - If this worked then you have a working MongoDB and to start it you just need to have `mongod` running in background
 
-### MongoChef
+### Studio 3T
 
 > Need just for MongoDB Workshop
 
-Command line shells are good to learn, but for sake of simplicity we will just use a GUI to interact with our database. [MongoChef](https://studio3t.com/download/) is by far the nicest MongoDB GUI I know about and easy to [download and install.](https://studio3t.com/download/)
+Command line shells are good to learn, but for sake of simplicity we will just use a GUI to interact with our database. [Studio 3T](https://studio3t.com/download/) is by far the nicest MongoDB GUI I know about and easy to [download and install.](https://studio3t.com/download/)
